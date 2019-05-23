@@ -13,6 +13,10 @@
 		E532FCA122975942000DD04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E532FCA022975942000DD04A /* Assets.xcassets */; };
 		E532FCA422975942000DD04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E532FCA222975942000DD04A /* LaunchScreen.storyboard */; };
 		E532FCAF22975942000DD04A /* CacheManagerExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FCAE22975942000DD04A /* CacheManagerExampleTests.swift */; };
+		E532FCBD22975990000DD04A /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FCB922975990000DD04A /* CacheManager.swift */; };
+		E532FCBE22975990000DD04A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FCBA22975990000DD04A /* ImageLoader.swift */; };
+		E532FCBF22975990000DD04A /* ScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FCBB22975990000DD04A /* ScreenInteractor.swift */; };
+		E532FCC022975990000DD04A /* ScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E532FCBC22975990000DD04A /* ScreenProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		E532FCAA22975942000DD04A /* CacheManagerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CacheManagerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E532FCAE22975942000DD04A /* CacheManagerExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerExampleTests.swift; sourceTree = "<group>"; };
 		E532FCB022975942000DD04A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E532FCB922975990000DD04A /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		E532FCBA22975990000DD04A /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		E532FCBB22975990000DD04A /* ScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenInteractor.swift; sourceTree = "<group>"; };
+		E532FCBC22975990000DD04A /* ScreenProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +85,9 @@
 		E532FC9822975941000DD04A /* CacheManagerExample */ = {
 			isa = PBXGroup;
 			children = (
-				E532FC9922975941000DD04A /* AppDelegate.swift */,
-				E532FC9B22975941000DD04A /* ViewController.swift */,
+				E532FCC4229759E5000DD04A /* Example */,
+				E532FCC3229759D8000DD04A /* Managers */,
+				E532FCC1229759AF000DD04A /* Core */,
 				E532FC9D22975941000DD04A /* Main.storyboard */,
 				E532FCA022975942000DD04A /* Assets.xcassets */,
 				E532FCA222975942000DD04A /* LaunchScreen.storyboard */,
@@ -94,6 +103,33 @@
 				E532FCB022975942000DD04A /* Info.plist */,
 			);
 			path = CacheManagerExampleTests;
+			sourceTree = "<group>";
+		};
+		E532FCC1229759AF000DD04A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E532FC9922975941000DD04A /* AppDelegate.swift */,
+				E532FC9B22975941000DD04A /* ViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E532FCC3229759D8000DD04A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E532FCB922975990000DD04A /* CacheManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E532FCC4229759E5000DD04A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				E532FCBB22975990000DD04A /* ScreenInteractor.swift */,
+				E532FCBC22975990000DD04A /* ScreenProtocols.swift */,
+				E532FCBA22975990000DD04A /* ImageLoader.swift */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +235,10 @@
 			files = (
 				E532FC9C22975941000DD04A /* ViewController.swift in Sources */,
 				E532FC9A22975941000DD04A /* AppDelegate.swift in Sources */,
+				E532FCBF22975990000DD04A /* ScreenInteractor.swift in Sources */,
+				E532FCBE22975990000DD04A /* ImageLoader.swift in Sources */,
+				E532FCC022975990000DD04A /* ScreenProtocols.swift in Sources */,
+				E532FCBD22975990000DD04A /* CacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
